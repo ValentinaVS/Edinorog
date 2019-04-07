@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Game</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="game.js"></script>
+		<script type="text/javascript" src="game.js"></script>
+		<img data-game="ova.gif"/>
+		<script type="text/javascript" id="gameName" language="JavaScript1.2">
+			var message="   PANINI DOLCI   "
+			var neonbasecolor="#990000"
+			var neontextcolor="#990000"
+			var neontextcolor2="#990000"
+			var flashspeed=100
+			var flashingletters=3
+			var flashingletters2=1
+			var flashpause=0
+			var n=0
+			if (document.all||document.getElementById){
+			   document.write('<font color="'+neonbasecolor+'" size=+2>')
+			   for (m=0;m<message.length;m++)
+			   document.write('<span id="neonlight'+m+'">'+message.charAt(m)+'</span>')
+			   document.write('</font>')
+			}
+			else
+			   document.write(message)
+			function crossref(number)
+			{
+			   var crossobj=document.all? eval("document.all.neonlight"+number) : document.getElementById("neonlight"+number)
+			   return crossobj
+			}
+			function neon()
+			{
+			   //Change all letters to base color
+			   if (n==0)
+			   {
+			  	for (m=0;m<message.length;m++)
+			  	crossref(m).style.color=neonbasecolor
+			   }
+			   crossref(n).style.color=neontextcolor
+			   if (n>flashingletters-1) crossref(n-flashingletters).style.color=neontextcolor2
+			   if (n>(flashingletters+flashingletters2)-1) crossref(n-flashingletters-flashingletters2).style.color=neonbasecolor
+			   if (n<message.length-1) n++
+			   else
+			   {
+				    n=0
+				    clearInterval(flashing)
+				    setTimeout("beginneon()",flashpause)
+				    return
+			    }
+			}
+			function beginneon()
+			{
+			   if (document.all||document.getElementById)
+			   flashing=setInterval("neon()",flashspeed)
+			}
+			beginneon()
+		</script>
+	</head>
+<body>
+	<div id="knopka">
+<!--		<input type="button" value="Begin" onClick="style.display='none', init2()"> 
+	<img id="img" src="img/set.png" width="575" height="575" > text.style.display='block'
+-->
+	<img id="img9" src="img/vopr9.jpg" width="347" height="453" style="display:none"/>
+	<img id="img1" src="img/vopr1.jpg" width="347" height="453" style="display:none">
+	<img id="img2" src="img/vopr2.jpg" width="347" height="453" style="display:none">
+	<img id="img3" src="img/vopr3.jpg" width="347" height="453" style="display:none">
+	<img id="img4" src="img/vopr4.jpg" width="347" height="453" style="display:none">
+	<img id="img5" src="img/vopr5.jpg" width="347" height="453" style="display:none">
+	<img id="img6" src="img/vopr6.jpg" width="347" height="453" style="display:none">
+	<img id="img7" src="img/vopr7.jpg" width="347" height="453" style="display:none">
+	<img id="img8" src="img/vopr8.jpg" width="347" height="453" style="display:none">
+	<img id="img10" src="img/vopr10.jpg" width="347" height="453" style="display:none">
+	<img id="img11" src="img/vopr11.jpg" width="347" height="453" style="display:none">
+	<img id="img12" src="img/vopr12.jpg" width="347" height="453" style="display:none">
+	<img id="img13" src="img/vopr13.jpg" width="347" height="453" style="display:none">
+	<img id="img14" src="img/vopr14.jpg" width="347" height="453" style="display:none">
+	<img id="img15" src="img/vopr15.jpg" width="347" height="453" style="display:none">
+	<img id="img16" src="img/vopr16.jpg" width="347" height="453" style="display:none">
+	<img id="img17" src="img/vopr17.jpg" width="347" height="453" style="display:none">
+	<img id="img18" src="img/vopr18.jpg" width="347" height="453" style="display:none">
+	<img id="img19" src="img/vopr19.jpg" width="347" height="453" style="display:none">
+	<img id="img20" src="img/vopr20.jpg" width="347" height="453" style="display:none">
+	<img id="img21" src="img/vopr21.jpg" width="347" height="453" style="display:none">
+	<img id="img22" src="img/vopr22.jpg" width="347" height="453" style="display:none">
+	<img id="img23" src="img/vopr23.jpg" width="347" height="453" style="display:none">
+	<img id="img24" src="img/vopr24.jpg" width="347" height="453" style="display:none">
+	<img id="img25" src="img/vopr25.jpg" width="347" height="453" style="display:none">
+
+	
+	<div id="k"style="display:block"><input type="button" value="  " onClick="edinorogi.style.display='none',img25.style.display='block', v251.style.display='block', v252.style.display='block', v253.style.display='block', v254.style.display='block'">
+
+	<div id="n" style:"margin: 0 0 0 0; display:block;"><input type="button" value="  " onClick="edinorogi.style.display='none', img2.style.display='block', v21.style.display='block', v22.style.display='block', v23.style.display='block', v24.style.display='block'">
+	
+	<div id="knopka3" style="display:block"><input type="button" value="  " onClick="edinorogi.style.display='none', img9.style.display='block', ok1.style.display='block', ok2.style.display='block', ok3.style.display='block', ok4.style.display='block'">
+	
+	<div id="knopka4" style="display:block"><input type="button" value="  " onClick="edinorogi.style.display='none',img1.style.display='block', v11.style.display='block', v12.style.display='block', v13.style.display='block', v14.style.display='block'">
+
+	<div id="knopka5"><input type="button" value="  " onClick="edinorogi.style.display='none',img3.style.display='block', v31.style.display='block', v32.style.display='block', v33.style.display='block', v34.style.display='block'">
+	<br><br><br><br><br><br><p>
+
+	<div id="kk"><input type="button" value="  " onClick="edinorogi.style.display='none',img4.style.display='block', v41.style.display='block', v42.style.display='block', v43.style.display='block', v44.style.display='block'">
+
+	<div id="nn" style:"margin: 0 0 0 0; display:block;"><input type="button" value="  " onClick="edinorogi.style.display='none',img5.style.display='block', v51.style.display='block', v52.style.display='block', v53.style.display='block', v54.style.display='block'">
+
+	<div id="knopka8"><input type="button" value="  " onClick="edinorogi.style.display='none',img6.style.display='block', v61.style.display='block', v62.style.display='block', v63.style.display='block', v64.style.display='block'">
+
+	<div id="knopka9"><input type="button" value="  " onClick="edinorogi.style.display='none',img7.style.display='block', v71.style.display='block', v72.style.display='block', v73.style.display='block', v74.style.display='block'">
+
+	<div id="knopka10"><input type="button" value="  " onClick="edinorogi.style.display='none',img8.style.display='block', v81.style.display='block', v82.style.display='block', v83.style.display='block', v84.style.display='block'">
+
+	<br><br><br><br><br><br><p>
+
+	<div id="kkk"><input type="button" value="  " onClick="edinorogi.style.display='none',img10.style.display='block', v101.style.display='block', v102.style.display='block', v103.style.display='block', v104.style.display='block'">
+
+	<div id="nnn" style:"margin: 0 0 0 0; display:block;"><input type="button" value="  " onClick="edinorogi.style.display='none',img11.style.display='block', v111.style.display='block', v112.style.display='block', v113.style.display='block', v114.style.display='block'">
+
+	<div id="knopka13"><input type="button" value="  " onClick="edinorogi.style.display='none',img12.style.display='block', v121.style.display='block', v122.style.display='block', v123.style.display='block', v124.style.display='block'">
+
+	<div id="knopka14"><input type="button" value="  " onClick="edinorogi.style.display='none',img13.style.display='block', v131.style.display='block', v132.style.display='block', v133.style.display='block', v134.style.display='block'">
+
+	<div id="knopka15"><input type="button" value="  " onClick="edinorogi.style.display='none',img14.style.display='block', v141.style.display='block', v142.style.display='block', v143.style.display='block', v144.style.display='block'">
+
+	<br><br><br><br><br><br><p>
+
+	<div id="kkkk"><input type="button" value="  " onClick="edinorogi.style.display='none',img15.style.display='block', v151.style.display='block', v152.style.display='block', v153.style.display='block', v154.style.display='block'">
+
+	<div id="nnnn" style:"margin: 0 0 0 0; display:block;"><input type="button" value="  " onClick="edinorogi.style.display='none',img16.style.display='block', v161.style.display='block', v162.style.display='block', v163.style.display='block', v164.style.display='block'">
+
+	<div id="knopka13"><input type="button" value="  " onClick="edinorogi.style.display='none',img17.style.display='block', v171.style.display='block', v172.style.display='block', v173.style.display='block', v174.style.display='block'">
+
+	<div id="knopka14"><input type="button" value="  " onClick="edinorogi.style.display='none',img18.style.display='block', v181.style.display='block', v182.style.display='block', v183.style.display='block', v184.style.display='block'">
+
+	<div id="knopka15"><input type="button" value="  " onClick="edinorogi.style.display='none',img19.style.display='block', v191.style.display='block', v192.style.display='block', v193.style.display='block', v194.style.display='block'">
+
+	<br><br><br><br><br><br><p>
+
+	<div id="kkkkk"><input type="button" value="  " onClick="edinorogi.style.display='none',img20.style.display='block', v201.style.display='block', v202.style.display='block', v203.style.display='block', v204.style.display='block'">
+
+	<div id="nnnnn" style:"margin: 0 0 0 0; display:block;"><input type="button" value="  " onClick="edinorogi.style.display='none',img21.style.display='block', v211.style.display='block', v212.style.display='block', v213.style.display='block', v214.style.display='block'">
+
+	<div id="knopka13"><input type="button" value="  " onClick="edinorogi.style.display='none',img22.style.display='block', v221.style.display='block', v222.style.display='block', v223.style.display='block', v224.style.display='block'">
+
+	<div id="knopka14"><input type="button" value="  " onClick="edinorogi.style.display='none',img23.style.display='block', v231.style.display='block', v232.style.display='block', v233.style.display='block', v234.style.display='block'">
+
+	<div id="knopka15" style="background-image: url("img/jul.jpg")"><input type="button" value="  " onClick="edinorogi.style.display='none', img24.style.display='block', v241.style.display='block', v242.style.display='block', v243.style.display='block', v244.style.display='block'">
+	<canvas id="map"></canvas>
+	<canvas id="map2"></canvas>
+	<canvas id="player"></canvas>
+	<canvas id="player2"></canvas>
+	<canvas id="enemy"></canvas>
+	<canvas id="water"></canvas>
+	<canvas id="enemy2"></canvas>
+	<canvas id="diplom"></canvas>
+	<canvas id="stats"></canvas>
+	<img id="ok" scr = "img/ZASTAVKA.jpg">
+	<img id="ed"  name="img" src="img/e.png"/>
+	<img id="g" name="img111" src="img/E_ANmEexRSo.png"/>
+<div id="edinorogi">
+	<img id="img333" src="img/jul.jpg" width="115" height="115" style="display:none">
+	<img id="img32" src="img/edinorog.jpg" width="115" height="115" style="display:none">
+	<img id="img1333" src="img/jul.jpg" width="115" height="115" style="display:none">
+	<img id="img132" src="img/edinorog.jpg" width="115" height="115" style="display:none">
+	<img id="img2333" src="img/jul.jpg" width="115" height="115" style="display:none">
+	<img id="img232" src="img/edinorog.jpg" width="115" height="115" style="display:none">
+	<img id="img33" src="img/jul.jpg" width="115" height="115" style="display:none">
+	<img id="img332" src="img/edinorog.jpg" width="115" height="115" style="display:none">
+	<img id="img43" src="img/jul.jpg" width="115" height="115" style="display:none">
+	<img id="img432" src="img/edinorog.jpg" width="115" height="115" style="display:none">
+	<img id="img53" src="img/jul.jpg" width="115" height="115" style="display:none">
+	<img id="img532" src="img/edinorog.jpg" width="115" height="115" style="display:none">
+	<img id="img63" src="img/jul.jpg" width="115" height="115" style="display:none">
+	<img id="img632" src="img/edinorog.jpg" width="115" height="115" style="display:none">
+	<img id="img73" src="img/jul.jpg" width="115" height="115" style="display:none">
+	<img id="img732" src="img/edinorog.jpg" width="115" height="115" style="display:none">
+	<img id="img83" src="img/jul.jpg" width="115" height="115" style="display:none">
+	<img id="img832" src="img/edinorog.jpg" width="115" height="115" style="display:none">
+	<img id="img103" src="img/jul.jpg" width="115" height="115" style="display:none">
+	<img id="img1032" src="img/edinorog.jpg" width="115" height="115" style="display:none">
+	<img id="img113" src="img/jul.jpg" width="115" height="115" style="display:none">
+	<img id="img1132" src="img/edinorog.jpg" width="115" height="115" style="display:none">
+	<img id="img123" src="img/jul.jpg" width="115" height="115" style="display:none">
+	<img id="img1232" src="img/edinorog.jpg" width="115" height="115" style="display:none">
+	<img id="img133" src="img/jul.jpg" width="115" height="115" style="display:none">
+	<img id="img1332" src="img/edinorog.jpg" width="115" height="115" style="display:none">
+	<img id="img143" src="img/jul.jpg" width="115" height="115" style="display:none">
+	<img id="img1432" src="img/edinorog.jpg" width="115" height="115" style="display:none">
+	<img id="img153" src="img/jul.jpg" width="115" height="115" style="display:none">
+	<img id="img1532" src="img/edinorog.jpg" width="115" height="115" style="display:none">
+	<img id="img163" src="img/jul.jpg" width="115" height="115" style="display:none">
+	<img id="img1632" src="img/edinorog.jpg" width="115" height="115" style="display:none">
+	<img id="img173" src="img/jul.jpg" width="115" height="115" style="display:none">
+	<img id="img1732" src="img/edinorog.jpg" width="115" height="115" style="display:none">
+	<img id="img183" src="img/jul.jpg" width="115" height="115" style="display:none">
+	<img id="img1832" src="img/edinorog.jpg" width="115" height="115" style="display:none">
+	<img id="img193" src="img/jul.jpg" width="115" height="115" style="display:none">
+	<img id="img1932" src="img/edinorog.jpg" width="115" height="115" style="display:none">
+	<img id="img203" src="img/jul.jpg" width="115" height="115" style="display:none">
+	<img id="img2032" src="img/edinorog.jpg" width="115" height="115" style="display:none">
+	<img id="img213" src="img/jul.jpg" width="115" height="115" style="display:none">
+	<img id="img2132" src="img/edinorog.jpg" width="115" height="115" style="display:none">
+	<img id="img223" src="img/jul.jpg" width="115" height="115" style="display:none">
+	<img id="img2232" src="img/edinorog.jpg" width="115" height="115" style="display:none">
+	<img id="img233" src="img/jul.jpg" width="115" height="115" style="display:none">
+	<img id="img2332" src="img/edinorog.jpg" width="115" height="115" style="display:none">
+	<img id="img243" src="img/jul.jpg" width="115" height="115" style="display:none">
+	<img id="img2432" src="img/edinorog.jpg" width="115" height="115" style="display:none">
+	<img id="img253" src="img/jul.jpg" width="115" height="115" style="display:none">
+	<img id="img2532" src="img/edinorog.jpg" width="115" height="115" style="display:none">
+</div>
+	
+
+	<div id="ok1" style="display:none"><input type="button" value=" 1 "  onClick="img9.style.display='none', ok1.style.display='none', ok2.style.display='none', ok3.style.display='none', ok4.style.display='none', edinorogi.style.display='block', img333.style.display='block', clickg()"></div>
+	<div id="ok2" style="display:none"><input type="button" value=" 2 "  onClick=" img9.style.display='none', ok1.style.display='none', ok2.style.display='none', ok3.style.display='none', ok4.style.display='none',img333.style.display='block', edinorogi.style.display='block', clickg()"></div>
+	<div id="ok3" style="display:none"><input type="button" value=" 3 "  onClick=" img9.style.display='none', ok1.style.display='none', ok2.style.display='none', ok3.style.display='none', ok4.style.display='none', img32.style.display='block', edinorogi.style.display='block', clicke()"></div>
+	<div id="ok4" style="display:none"><input type="button" value=" 4 "  onClick=" img9.style.display='none', ok1.style.display='none', ok2.style.display='none', ok3.style.display='none', ok4.style.display='none',img333.style.display='block', edinorogi.style.display='block', clickg()"></div>
+
+		<div id="v11" style="display:none"><input type="button" value=" 1 "  onClick="img1.style.display='none', v11.style.display='none', v12.style.display='none', v13.style.display='none', v14.style.display='none', img1333.style.display='block', edinorogi.style.display='block', clickg()"></div>
+		<div id="v12" style="display:none"><input type="button" value=" 2 "  onClick="img1.style.display='none', v11.style.display='none', v12.style.display='none', v13.style.display='none', v14.style.display='none',img1333.style.display='block', edinorogi.style.display='block',clickg()"></div>
+		<div id="v13" style="display:none"><input type="button" value=" 3 "  onClick="img1.style.display='none', v11.style.display='none', v12.style.display='none', v13.style.display='none', v14.style.display='none', img132.style.display='block',edinorogi.style.display='block', clicke()"></div>
+		<div id="v14" style="display:none"><input type="button" value=" 4 "  onClick="img1.style.display='none', v11.style.display='none', v12.style.display='none', v13.style.display='none', v14.style.display='none',img1333.style.display='block', edinorogi.style.display='block', clickg()"></div>
+
+	<div id="v21" style="display:none"><input type="button" value=" 1 "  onClick="img2.style.display='none', v21.style.display='none', v22.style.display='none', v23.style.display='none', v24.style.display='none', img2333.style.display='block', edinorogi.style.display='block', clickg()"></div>
+	<div id="v22" style="display:none"><input type="button" value=" 2 "  onClick="img2.style.display='none', v21.style.display='none', v22.style.display='none', v23.style.display='none', v24.style.display='none', img232.style.display='block', edinorogi.style.display='block', clicke()"></div>
+	<div id="v23" style="display:none"><input type="button" value=" 3 "  onClick="img2.style.display='none', v21.style.display='none', v22.style.display='none', v23.style.display='none', v24.style.display='none',  img2333.style.display='block', edinorogi.style.display='block', clickg()"></div>
+	<div id="v24" style="display:none"><input type="button" value=" 4 "  onClick="img2.style.display='none', v21.style.display='none', v22.style.display='none', v23.style.display='none', v24.style.display='none', img2333.style.display='block', edinorogi.style.display='block', clickg()"></div>
+	
+	<div id="v31" style="display:none"><input type="button" value=" 1 "  onClick="img3.style.display='none', v31.style.display='none', v32.style.display='none', v33.style.display='none', v34.style.display='none', img33.style.display='block', edinorogi.style.display='block', clickg()"></div>
+	<div id="v32" style="display:none"><input type="button" value=" 2 "  onClick="img3.style.display='none', v31.style.display='none', v32.style.display='none', v33.style.display='none', v34.style.display='none', img33.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v33" style="display:none"><input type="button" value=" 3 "  onClick="img3.style.display='none', v31.style.display='none', v32.style.display='none', v33.style.display='none', v34.style.display='none', img33.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v34" style="display:none"><input type="button" value=" 4 "  onClick="img3.style.display='none', v31.style.display='none', v32.style.display='none', v33.style.display='none', v34.style.display='none', img332.style.display='block', edinorogi.style.display='block',clicke()"></div>
+
+	<div id="v41" style="display:none"><input type="button" value=" 1 "  onClick="img4.style.display='none', v41.style.display='none', v42.style.display='none', v43.style.display='none', v44.style.display='none', img43.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v42" style="display:none"><input type="button" value=" 2 "  onClick="img4.style.display='none', v41.style.display='none', v42.style.display='none', v43.style.display='none', v44.style.display='none', img43.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v43" style="display:none"><input type="button" value=" 3 "  onClick="img4.style.display='none', v41.style.display='none', v42.style.display='none', v43.style.display='none', v44.style.display='none', img43.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v44" style="display:none"><input type="button" value=" 4 "  onClick="img4.style.display='none', v41.style.display='none', v42.style.display='none', v43.style.display='none', v44.style.display='none', img432.style.display='block', edinorogi.style.display='block',clicke()"></div>
+	
+	<div id="v51" style="display:none"><input type="button" value=" 1 "  onClick="img5.style.display='none', v51.style.display='none', v52.style.display='none', v53.style.display='none', v54.style.display='none', img53.style.display='block', edinorogi.style.display='block', clickg()"></div>
+	<div id="v52" style="display:none"><input type="button" value=" 2 "  onClick="img5.style.display='none', v51.style.display='none', v52.style.display='none', v53.style.display='none', v54.style.display='none', img53.style.display='block', edinorogi.style.display='block', clickg()"></div>
+	<div id="v53" style="display:none"><input type="button" value=" 3 "  onClick="img5.style.display='none', v51.style.display='none', v52.style.display='none', v53.style.display='none', v54.style.display='none', img53.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v54" style="display:none"><input type="button" value=" 4 "  onClick="img5.style.display='none', v51.style.display='none', v52.style.display='none', v53.style.display='none', v54.style.display='none', img532.style.display='block', edinorogi.style.display='block',clicke()"></div>
+
+	<div id="v61" style="display:none"><input type="button" value=" 1 "  onClick="img6.style.display='none', v61.style.display='none', v62.style.display='none', v63.style.display='none', v64.style.display='none', img632.style.display='block', edinorogi.style.display='block',clicke()"></div>
+	<div id="v62" style="display:none"><input type="button" value=" 2 "  onClick="img6.style.display='none', v61.style.display='none', v62.style.display='none', v63.style.display='none', v64.style.display='none', img63.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v63" style="display:none"><input type="button" value=" 3 "  onClick="img6.style.display='none', v61.style.display='none', v62.style.display='none', v63.style.display='none', v64.style.display='none', img63.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v64" style="display:none"><input type="button" value=" 4 "  onClick="img6.style.display='none', v61.style.display='none', v62.style.display='none', v63.style.display='none', v64.style.display='none', img63.style.display='block', edinorogi.style.display='block',clickg()"></div>
+
+	<div id="v71" style="display:none"><input type="button" value=" 1 "  onClick="img7.style.display='none', v71.style.display='none', v72.style.display='none', v73.style.display='none', v74.style.display='none', img732.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v72" style="display:none"><input type="button" value=" 2 "  onClick="img7.style.display='none', v71.style.display='none', v72.style.display='none', v73.style.display='none', v74.style.display='none', img73.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v73" style="display:none"><input type="button" value=" 3 "  onClick="img7.style.display='none', v71.style.display='none', v72.style.display='none', v73.style.display='none', v74.style.display='none',  img73.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v74" style="display:none"><input type="button" value=" 4 "  onClick="img7.style.display='none', v71.style.display='none', v72.style.display='none', v73.style.display='none', v74.style.display='none', img73.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	
+	<div id="v81" style="display:none"><input type="button" value=" 1 "  onClick="img8.style.display='none', v81.style.display='none', v82.style.display='none', v83.style.display='none', v84.style.display='none', img832.style.display='block', edinorogi.style.display='block',clicke()"></div>
+	<div id="v82" style="display:none"><input type="button" value=" 2 "  onClick="img8.style.display='none', v81.style.display='none', v82.style.display='none', v83.style.display='none', v84.style.display='none', img83.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v83" style="display:none"><input type="button" value=" 3 "  onClick="img8.style.display='none', v81.style.display='none', v82.style.display='none', v83.style.display='none', v84.style.display='none', img83.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v84" style="display:none"><input type="button" value=" 4 "  onClick="img8.style.display='none', v81.style.display='none', v82.style.display='none', v83.style.display='none', v84.style.display='none', img83.style.display='block', edinorogi.style.display='block',clickg()"></div>
+
+	<div id="v101" style="display:none"><input type="button" value=" 1 "  onClick="img10.style.display='none', v101.style.display='none', v102.style.display='none', v103.style.display='none', v104.style.display='none', img103.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v102" style="display:none"><input type="button" value=" 2 "  onClick="img10.style.display='none', v101.style.display='none', v102.style.display='none', v103.style.display='none', v104.style.display='none', img103.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v103" style="display:none"><input type="button" value=" 3 "  onClick="img10.style.display='none', v101.style.display='none', v102.style.display='none', v103.style.display='none', v104.style.display='none', img1032.style.display='block', edinorogi.style.display='block',clicke()"></div>
+	<div id="v104" style="display:none"><input type="button" value=" 4 "  onClick="img10.style.display='none', v101.style.display='none', v102.style.display='none', v103.style.display='none', v104.style.display='none', img103.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	
+	<div id="v111" style="display:none"><input type="button" value=" 1 "  onClick="img11.style.display='none', v111.style.display='none', v112.style.display='none', v113.style.display='none', v114.style.display='none', img113.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v112" style="display:none"><input type="button" value=" 2 "  onClick="img11.style.display='none', v111.style.display='none', v112.style.display='none', v113.style.display='none', v114.style.display='none', img113.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v113" style="display:none"><input type="button" value=" 3 "  onClick="img11.style.display='none', v111.style.display='none', v112.style.display='none', v113.style.display='none', v114.style.display='none', img1132.style.display='block', edinorogi.style.display='block',clicke()"></div>
+	<div id="v114" style="display:none"><input type="button" value=" 4 "  onClick="img11.style.display='none', v111.style.display='none', v112.style.display='none', v113.style.display='none', v114.style.display='none', img113.style.display='block', edinorogi.style.display='block',clickg()"></div>
+
+	<div id="v121" style="display:none"><input type="button" value=" 1 "  onClick="img12.style.display='none', v121.style.display='none', v122.style.display='none', v123.style.display='none', v124.style.display='none', img1232.style.display='block', edinorogi.style.display='block',clicke()"></div>
+	<div id="v122" style="display:none"><input type="button" value=" 2 "  onClick="img12.style.display='none', v121.style.display='none', v122.style.display='none', v123.style.display='none', v124.style.display='none', img123.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v123" style="display:none"><input type="button" value=" 3 "  onClick="img12.style.display='none', v121.style.display='none', v122.style.display='none', v123.style.display='none', v124.style.display='none', img123.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v124" style="display:none"><input type="button" value=" 4 "  onClick="img12.style.display='none', v121.style.display='none', v122.style.display='none', v123.style.display='none', v124.style.display='none', img123.style.display='block', edinorogi.style.display='block',clickg()"></div>
+
+	<div id="v131" style="display:none"><input type="button" value=" 1 "  onClick="img13.style.display='none', v131.style.display='none', v132.style.display='none', v133.style.display='none', v134.style.display='none', img133.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v132" style="display:none"><input type="button" value=" 2 "  onClick="img13.style.display='none', v131.style.display='none', v132.style.display='none', v133.style.display='none', v134.style.display='none', img133.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v133" style="display:none"><input type="button" value=" 3 "  onClick="img13.style.display='none', v131.style.display='none', v132.style.display='none', v133.style.display='none', v134.style.display='none', img1332.style.display='block', edinorogi.style.display='block',clicke()"></div>
+	<div id="v134" style="display:none"><input type="button" value=" 4 "  onClick="img13.style.display='none', v131.style.display='none', v132.style.display='none', v133.style.display='none', v134.style.display='none', img133.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	
+	<div id="v141" style="display:none"><input type="button" value=" 1 "  onClick="img14.style.display='none', v141.style.display='none', v142.style.display='none', v143.style.display='none', v144.style.display='none', img143.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v142" style="display:none"><input type="button" value=" 2 "  onClick="img14.style.display='none', v141.style.display='none', v142.style.display='none', v143.style.display='none', v144.style.display='none', img143.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v143" style="display:none"><input type="button" value=" 3 "  onClick="img14.style.display='none', v141.style.display='none', v142.style.display='none', v143.style.display='none', v144.style.display='none', img1432.style.display='block', edinorogi.style.display='block',clicke()"></div>
+	<div id="v144" style="display:none"><input type="button" value=" 4 "  onClick="img14.style.display='none', v141.style.display='none', v142.style.display='none', v143.style.display='none', v144.style.display='none', img143.style.display='block', edinorogi.style.display='block',clickg()"></div>
+
+	<div id="v151" style="display:none"><input type="button" value=" 1 "  onClick="img15.style.display='none', v151.style.display='none', v152.style.display='none', v153.style.display='none', v154.style.display='none', img153.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v152" style="display:none"><input type="button" value=" 2 "  onClick="img15.style.display='none', v151.style.display='none', v152.style.display='none', v153.style.display='none', v154.style.display='none', img153.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v153" style="display:none"><input type="button" value=" 3 "  onClick="img15.style.display='none', v151.style.display='none', v152.style.display='none', v153.style.display='none', v154.style.display='none', img1532.style.display='block', edinorogi.style.display='block',clicke()"></div>
+	<div id="v154" style="display:none"><input type="button" value=" 4 "  onClick="img15.style.display='none', v151.style.display='none', v152.style.display='none', v153.style.display='none', v154.style.display='none', img153.style.display='block', edinorogi.style.display='block',clickg()"></div>
+
+	<div id="v161" style="display:none"><input type="button" value=" 1 "  onClick="img16.style.display='none', v161.style.display='none', v162.style.display='none', v163.style.display='none', v164.style.display='none', img1632.style.display='block', edinorogi.style.display='block',clicke()"></div>
+	<div id="v162" style="display:none"><input type="button" value=" 2 "  onClick="img16.style.display='none', v161.style.display='none', v162.style.display='none', v163.style.display='none', v164.style.display='none', img163.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v163" style="display:none"><input type="button" value=" 3 "  onClick="img16.style.display='none', v161.style.display='none', v162.style.display='none', v163.style.display='none', v164.style.display='none', img163.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v164" style="display:none"><input type="button" value=" 4 "  onClick="img16.style.display='none', v161.style.display='none', v162.style.display='none', v163.style.display='none', v164.style.display='none', img163.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	
+	<div id="v171" style="display:none"><input type="button" value=" 1 "  onClick="img17.style.display='none', v171.style.display='none', v172.style.display='none', v173.style.display='none', v174.style.display='none', img1732.style.display='block', edinorogi.style.display='block',clicke()"></div>
+	<div id="v172" style="display:none"><input type="button" value=" 2 "  onClick="img17.style.display='none', v171.style.display='none', v172.style.display='none', v173.style.display='none', v174.style.display='none', img173.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v173" style="display:none"><input type="button" value=" 3 "  onClick="img17.style.display='none', v171.style.display='none', v172.style.display='none', v173.style.display='none', v174.style.display='none', img173.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v174" style="display:none"><input type="button" value=" 4 "  onClick="img17.style.display='none', v171.style.display='none', v172.style.display='none', v173.style.display='none', v174.style.display='none', img173.style.display='block', edinorogi.style.display='block',clickg()"></div>
+
+	<div id="v181" style="display:none"><input type="button" value=" 1 "  onClick="img18.style.display='none', v181.style.display='none', v182.style.display='none', v183.style.display='none', v184.style.display='none', img183.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v182" style="display:none"><input type="button" value=" 2 "  onClick="img18.style.display='none', v181.style.display='none', v182.style.display='none', v183.style.display='none', v184.style.display='none', img1832.style.display='block', edinorogi.style.display='block',clicke()"></div>
+	<div id="v183" style="display:none"><input type="button" value=" 3 "  onClick="img18.style.display='none', v181.style.display='none', v182.style.display='none', v183.style.display='none', v184.style.display='none', img183.style.display='block', edinorogi.style.display='block'mclickg()"></div>
+	<div id="v184" style="display:none"><input type="button" value=" 4 "  onClick="img18.style.display='none', v181.style.display='none', v182.style.display='none', v183.style.display='none', v184.style.display='none', img183.style.display='block', edinorogi.style.display='block',clickg()"></div>
+
+	<div id="v191" style="display:none"><input type="button" value=" 1 "  onClick="img19.style.display='none', v191.style.display='none', v192.style.display='none', v193.style.display='none', v194.style.display='none', img1932.style.display='block', edinorogi.style.display='block',clicke()"></div>
+	<div id="v192" style="display:none"><input type="button" value=" 2 "  onClick="img19.style.display='none', v191.style.display='none', v192.style.display='none', v193.style.display='none', v194.style.display='none', img193.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v193" style="display:none"><input type="button" value=" 3 "  onClick="img19.style.display='none', v191.style.display='none', v192.style.display='none', v193.style.display='none', v194.style.display='none', img193.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v194" style="display:none"><input type="button" value=" 4 "  onClick="img19.style.display='none', v191.style.display='none', v192.style.display='none', v193.style.display='none', v194.style.display='none', img193.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	
+	<div id="v201" style="display:none"><input type="button" value=" 1 "  onClick="img20.style.display='none', v201.style.display='none', v202.style.display='none', v203.style.display='none', v204.style.display='none', img2032.style.display='block', edinorogi.style.display='block',clicke()"></div>
+	<div id="v202" style="display:none"><input type="button" value=" 2 "  onClick="img20.style.display='none', v201.style.display='none', v202.style.display='none', v203.style.display='none', v204.style.display='none', img203.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v203" style="display:none"><input type="button" value=" 3 "  onClick="img20.style.display='none', v201.style.display='none', v202.style.display='none', v203.style.display='none', v204.style.display='none', img203.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v204" style="display:none"><input type="button" value=" 4 "  onClick="img20.style.display='none', v201.style.display='none', v202.style.display='none', v203.style.display='none', v204.style.display='none', img203.style.display='block', edinorogi.style.display='block',clickg()"></div>
+
+	<div id="v211" style="display:none"><input type="button" value=" 1 "  onClick="img21.style.display='none', v211.style.display='none', v212.style.display='none', v213.style.display='none', v214.style.display='none', img213.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v212" style="display:none"><input type="button" value=" 2 "  onClick="img21.style.display='none', v211.style.display='none', v212.style.display='none', v213.style.display='none', v214.style.display='none', img2132.style.display='block', edinorogi.style.display='block',clicke()"></div>
+	<div id="v213" style="display:none"><input type="button" value=" 3 "  onClick="img21.style.display='none', v211.style.display='none', v212.style.display='none', v213.style.display='none', v214.style.display='none', img213.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v214" style="display:none"><input type="button" value=" 4 "  onClick="img21.style.display='none', v211.style.display='none', v212.style.display='none', v213.style.display='none', v214.style.display='none', img213.style.display='block', edinorogi.style.display='block',clickg()"></div>
+
+	<div id="v221" style="display:none"><input type="button" value=" 1 "  onClick="img22.style.display='none', v221.style.display='none', v222.style.display='none', v223.style.display='none', v224.style.display='none', img223.style.display='block', edinorogi.style.display='block'.clickg()"></div>
+	<div id="v222" style="display:none"><input type="button" value=" 2 "  onClick="img22.style.display='none', v221.style.display='none', v222.style.display='none', v223.style.display='none', v224.style.display='none', img2232.style.display='block', edinorogi.style.display='block',clicke()"></div>
+	<div id="v223" style="display:none"><input type="button" value=" 3 "  onClick="img22.style.display='none', v221.style.display='none', v222.style.display='none', v223.style.display='none', v224.style.display='none', img223.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v224" style="display:none"><input type="button" value=" 4 "  onClick="img22.style.display='none', v221.style.display='none', v222.style.display='none', v223.style.display='none', v224.style.display='none', img223.style.display='block', edinorogi.style.display='block',clickg()"></div>
+
+	<div id="v231" style="display:none"><input type="button" value=" 1 "  onClick="img23.style.display='none', v231.style.display='none', v232.style.display='none', v233.style.display='none', v234.style.display='none', img233.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v232" style="display:none"><input type="button" value=" 2 "  onClick="img23.style.display='none', v231.style.display='none', v232.style.display='none', v233.style.display='none', v234.style.display='none', img233.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v233" style="display:none"><input type="button" value=" 3 "  onClick="img23.style.display='none', v231.style.display='none', v232.style.display='none', v233.style.display='none', v234.style.display='none', img233.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v234" style="display:none"><input type="button" value=" 4 "  onClick="img23.style.display='none', v231.style.display='none', v232.style.display='none', v233.style.display='none', v234.style.display='none', img2332.style.display='block', edinorogi.style.display='block',clicke()"></div>
+
+	<div id="v241" style="display:none"><input type="button" value=" 1 "  onClick="img24.style.display='none', v241.style.display='none', v242.style.display='none', v243.style.display='none', v244.style.display='none', img2432.style.display='block', edinorogi.style.display='block',clicke()"></div>
+	<div id="v242" style="display:none"><input type="button" value=" 2 "  onClick="img24.style.display='none', v241.style.display='none', v242.style.display='none', v243.style.display='none', v244.style.display='none', img243.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v243" style="display:none"><input type="button" value=" 3 "  onClick="img24.style.display='none', v241.style.display='none', v242.style.display='none', v243.style.display='none', v244.style.display='none', img243.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v244" style="display:none"><input type="button" value=" 4 "  onClick="img24.style.display='none', v241.style.display='none', v242.style.display='none', v243.style.display='none', v244.style.display='none', img243.style.display='block', edinorogi.style.display='block',clickg()"></div>
+
+	<div id="v251" style="display:none"><input type="button" value=" 1 "  onClick="img25.style.display='none', v251.style.display='none', v252.style.display='none', v253.style.display='none', v254.style.display='none', img253.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v252" style="display:none"><input type="button" value=" 2 "  onClick="img25.style.display='none', v251.style.display='none', v252.style.display='none', v253.style.display='none', v254.style.display='none', img2532.style.display='block', edinorogi.style.display='block',clicke()"></div>
+	<div id="v253" style="display:none"><input type="button" value=" 3 "  onClick="img25.style.display='none', v251.style.display='none', v252.style.display='none', v253.style.display='none', v254.style.display='none', img253.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	<div id="v254" style="display:none"><input type="button" value=" 4 "  onClick="img25.style.display='none', v251.style.display='none', v252.style.display='none', v253.style.display='none', v254.style.display='none', img253.style.display='block', edinorogi.style.display='block',clickg()"></div>
+	
+	<div id="menu"><input type="button" value=" Menu "  onClick="location.href='one/index.html'"></div>
+
+</body>
+</html>

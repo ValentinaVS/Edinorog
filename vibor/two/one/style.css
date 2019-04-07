@@ -1,0 +1,55 @@
+ body
+{
+//	background: #333;
+	background-image: url("Fux2ag51B4k.jpg");
+}
+#f input{
+background-image: url("KLSVpp8-JUE.jpg");
+//background: rgba(0,0,0,0);
+width: 50px;//168px;
+height: 38px;//100px;
+font-family: Arial;
+position: absolute;
+//left: 600px;
+//top: 250px;
+font-size: 50px;//20px;
+color:red;
+//margin: 0px 29px 0px 0px;
+margin:290px 455px 0px;
+border: none;
+border-radius: 5px;
+}
+
+#s input{
+background-image: url("wW9fjmJZwEM.jpg");
+width: 50px;//168px;
+height: 38px;//100px;
+font-family: Arial;
+position: absolute;
+//left: 600px;
+//top: 250px;
+font-size: 50px;//20px;
+color:red;
+//margin: 0px 29px 0px 0px;
+margin:250px 650px 0px 660px;
+border: none;
+border-radius: 5px;
+}
+
+#t input {
+background-image: url("9ROYDIeRktQ.jpg");
+width: 50px;//168px;
+height: 38px;//100px;
+font-family: Arial;
+position: absolute;
+//left: 600px;
+//top: 250px;
+font-size: 50px;//20px;
+color:red;
+//margin: 0px 29px 0px 0px;
+margin:300px 860px 0px;
+border: none;
+border-radius: 5px;
+}
+
+

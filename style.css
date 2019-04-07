@@ -1,0 +1,53 @@
+ body
+{
+//	background: #333;
+	background-image: url("gtWY-cK60os.jpg");
+}
+
+#gameName
+{
+	color: #fff;
+	font-family: courier;
+	font-weight: bold;
+	font-size: 24px;
+	text-align:center;
+}
+
+#knopka input{
+background-image: url("s.jpg");
+width: 250px;//168px;800
+height: 300px;//100px;500
+font-family: Arial;
+//position: absolute;
+//left: 600px;
+//top: 250px;
+font-size: 50px;//20px;
+color:red;
+//margin: 0px 29px 0px 0px;
+margin:450px 850px 0px;
+//border: 1px solid #216ec6;
+border-radius: 10px;
+}
+
+
+
+canvas
+{
+	
+	display: block;
+	//background: #fff;
+	margin:0px 250px 0px;
+	//margin:0px 0px 0px;
+}
+
+#player, #ok, #enemy, #enemy2, #stats, #player2, #player3, #water, #diplom, #foto
+{
+	display: block;
+	margin:-500px auto 0px;
+}
+
+#map2
+{
+	display: block;
+	margin:-500px auto 0px;
+}
